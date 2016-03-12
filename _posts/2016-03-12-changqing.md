@@ -5,4 +5,4 @@ categories: 常青的日常
 excerpt: changqing
 ---
 
-##常青的日常连载正式上线啦
+常青的日常连载正式上线啦~\(≧▽≦)/~
