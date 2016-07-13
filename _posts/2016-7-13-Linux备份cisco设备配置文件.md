@@ -56,7 +56,7 @@ excerpt: Linux
     touch /bak/$FILE                #需要在循环中提前创建备份文件，否则会上传失败
     chmod 666 /bak/$FILE            #为其他账户增加写的权限
     (
-   		sleep 1;                    #设置休眠时间，放置因网络延迟导致的备份失败
+   		sleep 1;                    #设置休眠时间，防止因网络延迟导致的备份失败
    		echo $TELNET_NAME
    		sleep 1;
   		echo $TELNET_PASSWD
