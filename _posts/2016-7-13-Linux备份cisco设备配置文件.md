@@ -1,3 +1,8 @@
+---
+layout: post
+categories: Linux笔记
+excerpt: Linux
+---
 #Linux自动备份cisco设备配置文件
 
 * 系统 Centos 6.7
