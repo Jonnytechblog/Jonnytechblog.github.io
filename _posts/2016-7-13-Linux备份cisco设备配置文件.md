@@ -76,9 +76,9 @@ excerpt: Linux
     }
 
 	##zhixing shell
-	bakshell 172.16.100.11 L1       #备份设备地址及保存文件名称，如有更多设备按格式添加即可
-	bakshell 172.16.100.31 L3-1
-	bakshell 172.16.100.32 L3-2
+	bakshell 1.1.1.1 L1       #备份设备地址及保存文件名称，如有更多设备按格式添加即可
+	bakshell 2.2.2.2 L3-1
+	bakshell 3.3.3.3 L3-2
 
 ### 设置计划任务
 	
