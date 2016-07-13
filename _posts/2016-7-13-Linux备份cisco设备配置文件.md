@@ -6,7 +6,7 @@ excerpt: Linux
 ---
 
 * 系统 Centos 6.7
-* cisoc 2960 4506
+* cisco 2960 4506
 
 ## 1.安装tftp及telnet ##
 	
