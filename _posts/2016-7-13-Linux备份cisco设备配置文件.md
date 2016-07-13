@@ -24,7 +24,7 @@ excerpt: Linux
         user                    = root
         server                  = /usr/sbin/in.tftpd
         server_args             = -s /bak 					#指定上传目录
-        disable                 = no						#改为no 默认为yes不开启
+        disable                 = no                        #改为no 默认为yes不开启
         per_source              = 11
         cps                     = 100 2
         flags                   = IPv4
@@ -53,10 +53,10 @@ excerpt: Linux
 	#function
 	function bakshell {
     FILE="$2"_config_"$time"
-    touch /bak/$FILE				#需要在循环中提前创建备份文件，否则会上传失败
-    chmod 666 /bak/$FILE			#为其他账户增加写的权限
+    touch /bak/$FILE                #需要在循环中提前创建备份文件，否则会上传失败
+    chmod 666 /bak/$FILE            #为其他账户增加写的权限
     (
-   		sleep 1;					#设置休眠时间，放置因网络延迟导致的备份失败
+   		sleep 1;                    #设置休眠时间，放置因网络延迟导致的备份失败
    		echo $TELNET_NAME
    		sleep 1;
   		echo $TELNET_PASSWD
@@ -76,12 +76,13 @@ excerpt: Linux
     }
 
 	##zhixing shell
-	bakshell 172.16.100.11 L1 		 #备份设备地址及保存文件名称，如有更多设备按格式添加即可
+	bakshell 172.16.100.11 L1       #备份设备地址及保存文件名称，如有更多设备按格式添加即可
 	bakshell 172.16.100.31 L3-1
 	bakshell 172.16.100.32 L3-2
 
 ###设置计划任务
+	
 	crontab -e
-	00 23 1 * * sh /bak/swbak.sh	 #每月1号23点自动备份
+	00 23 1 * * sh /bak/swbak.sh    #每月1号23点自动备份
 
 	
