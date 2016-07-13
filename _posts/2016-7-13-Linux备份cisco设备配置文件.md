@@ -8,11 +8,11 @@ excerpt: Linux
 * 系统 Centos 6.7
 * cisoc 2960 4506
 
-##1.安装tftp及telnet
+## 1.安装tftp及telnet ##
 	
 	yum install tftp-server telnet -y
 	
-###配置tfyp
+### 配置tfyp
 	
 	vim /etc/xinetd.d/tftp
 	
@@ -32,13 +32,13 @@ excerpt: Linux
 
  	 重启服务器 /etc/init.d/xinetd restart
 
-###设置开机启动tftp
+### 设置开机启动tftp
 	
 	vim /etc/rc.d/rc.local
 	#增加一行
 	/etc/init.d/xinetd restart
 
-###编写自动备份脚本
+### 编写自动备份脚本 ###
 
 	#!/bin/bash
 	#bakup the switch files to tftp server
@@ -80,7 +80,7 @@ excerpt: Linux
 	bakshell 172.16.100.31 L3-1
 	bakshell 172.16.100.32 L3-2
 
-###设置计划任务
+### 设置计划任务
 	
 	crontab -e
 	00 23 1 * * sh /bak/swbak.sh    #每月1号23点自动备份
