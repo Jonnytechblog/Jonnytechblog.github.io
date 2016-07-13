@@ -1,9 +1,9 @@
 ---
 layout: post
+title:  "Linux自动备份cisco设备配置文件 "
 categories: Linux笔记
 excerpt: Linux
 ---
-#Linux自动备份cisco设备配置文件
 
 * 系统 Centos 6.7
 * cisoc 2960 4506
