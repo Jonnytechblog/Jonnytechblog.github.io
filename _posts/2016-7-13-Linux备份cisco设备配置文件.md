@@ -12,7 +12,7 @@ excerpt: Linux
 	
 	yum install tftp-server telnet -y
 	
-### 配置tfyp
+### 配置tftp
 	
 	vim /etc/xinetd.d/tftp
 	
